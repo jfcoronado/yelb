@@ -66,7 +66,7 @@ kind: Deployment
 metadata:
   name: yelb-ui
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels: 
       app: yelb-ui
@@ -132,7 +132,7 @@ kind: Deployment
 metadata:
   name: yelb-appserver
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels: 
       app: yelb-appserver
@@ -148,7 +148,3 @@ spec:
         image:  mreferre/yelb-appserver:0.5
         ports:
         - containerPort: 4567
-
-
-
-
